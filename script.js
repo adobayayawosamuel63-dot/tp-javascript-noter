@@ -140,25 +140,88 @@
 // const result = multiplesDe(tableau50, 6);
 // console.log(result); // [12, 432, 678, 876, 210, ...]
 
-const tableau50 = [
-523, 12, 87, 432, 234, 91, 678, 45, 234, 12,
-876, 34, 210, 56, 789, 123, 345, 987, 54, 321,
-432, 210, 654, 76, 89, 12, 98, 765, 234, 567,
-890, 12, 345, 678, 901, 234, 567, 123, 876, 543,
-12, 345, 678, 234, 567, 89, 90, 123, 456, 789
-];
-let nombre = 2; // j'ai pris l'exemple de nombre = 2
-     function multiplesDe(tab, n) { 
+// const tableau50 = [
+// 523, 12, 87, 432, 234, 91, 678, 45, 234, 12,
+// 876, 34, 210, 56, 789, 123, 345, 987, 54, 321,
+// 432, 210, 654, 76, 89, 12, 98, 765, 234, 567,
+// 890, 12, 345, 678, 901, 234, 567, 123, 876, 543,
+// 12, 345, 678, 234, 567, 89, 90, 123, 456, 789
+// ];
+// let nombre = 2; // j'ai pris l'exemple de nombre = 2
+//      function multiplesDe(tab, n) { 
 
-let MultiplesN = [];
-for (let i = 0 ; i < tab.length ; i++) {
-if ( tab[i] % n == 0){
-   MultiplesN.push(tab[i])
-} 
-}
-    console.log(MultiplesN);
-     }
+// let MultiplesN = [];
+// for (let i = 0 ; i < tab.length ; i++) {
+// if ( tab[i] % n == 0){
+//    MultiplesN.push(tab[i])
+// } 
+// }
+//     console.log(MultiplesN);
+//      }
 
-     console.log(multiplesDe(tableau50 , nombre))
+//      console.log(multiplesDe(tableau50 , nombre))
 
      // fin de l'exercice 5
+
+
+//      Exercice 6 : Bonus – Censure des voyelles
+// Énoncé :
+// On vous donne la chaîne de caractères suivante :
+// const phrase = "Bonjour à tous, et bon courage";
+// Consignes :
+// 1. Créez un programme qui retourne cette phrase en remplaçant toutes les voyelles
+// par *.
+// Exemple de résultat attendu :
+// B*nj**r à t**s, *t b*n c**r*g*
+// Aide / pseudo-code :
+// Définir la chaîne "phrase"
+// Créer une chaîne vide "resultat"
+// Pour chaque caractère "c" dans "phrase" :
+// Si "c" est une voyelle (a, e, i, o, u, y, et leurs majuscules ou
+// accents) :
+// Ajouter "*" à "resultat"
+// Sinon :
+// Ajouter "c" à "resultat"
+// Afficher "resultat"
+
+// const phrase = "Bonjour à tous, et bon courage";
+// let voyelle = ["a", "e", "i", "o", "u", "y"];
+// let resultat = "";
+
+// for(let i = 0 ; i < phrase.length ; i++){
+
+//     if( voyelle.includes(phrase[i])){
+//         // console.log(resultat)
+//        resultat+="*"
+
+//           }else{
+              
+//             resultat+=phrase[i];
+         
+//           }
+// }
+// console.log(resultat)
+    
+//fin de l'exercice bonus
+ let mot = "je suis la "
+function ChangeVar (phrase){
+    let resultat = "";
+let voyelle = ["a", "e", "i", "o", "u", "y"];
+for(let i = 0 ; i < phrase.length ; i++){
+if( voyelle.includes(phrase[i])){
+       
+       resultat+="*"
+
+          }else{
+              
+            resultat+=phrase[i];
+         
+          }
+
+
+}
+console.log(resultat)}
+
+console.log(ChangeVar( mot))
+
+/// fin de l'exercice 6 avec function
