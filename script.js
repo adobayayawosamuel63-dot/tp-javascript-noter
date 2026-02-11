@@ -110,6 +110,36 @@
 // Exemple de résultat attendu :
 // [12, 432, 678, 876, 210, ...]
 
+// const tableau50 = [
+// 523, 12, 87, 432, 234, 91, 678, 45, 234, 12,
+// 876, 34, 210, 56, 789, 123, 345, 987, 54, 321,
+// 432, 210, 654, 76, 89, 12, 98, 765, 234, 567,
+// 890, 12, 345, 678, 901, 234, 567, 123, 876, 543,
+// 12, 345, 678, 234, 567, 89, 90, 123, 456, 789
+// ];
+// let Multiples6 = [];
+// for (let i = 0 ; i < tableau50.length ; i++) {
+// if ( tableau50[i] % 6 == 0){
+//    Multiples6.push(tableau50 [i])
+// } 
+// }
+// console.log( Multiples6);
+ // fin de l'exercice 4
+
+//  Exercice 5 : Fonction pour multiples (6pts)
+// Énoncé :
+// On vous donne le tableau tableau50.
+// Consignes :
+// En vous aidant de l’exercice précédent, créez une fonction :
+// function multiplesDe(tab, n) { ... }
+// 1. qui prend en paramètre :
+// ○ un tableau tab
+// ○ un nombre n
+// 2. et retourne un nouveau tableau contenant uniquement les multiples de n.
+// Exemple d’utilisation :
+// const result = multiplesDe(tableau50, 6);
+// console.log(result); // [12, 432, 678, 876, 210, ...]
+
 const tableau50 = [
 523, 12, 87, 432, 234, 91, 678, 45, 234, 12,
 876, 34, 210, 56, 789, 123, 345, 987, 54, 321,
@@ -117,11 +147,18 @@ const tableau50 = [
 890, 12, 345, 678, 901, 234, 567, 123, 876, 543,
 12, 345, 678, 234, 567, 89, 90, 123, 456, 789
 ];
-let Multiples6 = [];
-for (let i = 0 ; i < tableau50.length ; i++) {
-if ( tableau50[i] % 6 == 0){
-   Multiples6.push(tableau50 [i])
+let nombre = 2; // j'ai pris l'exemple de nombre = 2
+     function multiplesDe(tab, n) { 
+
+let MultiplesN = [];
+for (let i = 0 ; i < tab.length ; i++) {
+if ( tab[i] % n == 0){
+   MultiplesN.push(tab[i])
 } 
 }
-console.log( Multiples6);
- // fin de l'exercice 4
+    console.log(MultiplesN);
+     }
+
+     console.log(multiplesDe(tableau50 , nombre))
+
+     // fin de l'exercice 5
