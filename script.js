@@ -81,6 +81,35 @@
 // Le plus grand nombre est : 987
 
 
+// const tableau50 = [
+// 523, 12, 87, 432, 234, 91, 678, 45, 234, 12,
+// 876, 34, 210, 56, 789, 123, 345, 987, 54, 321,
+// 432, 210, 654, 76, 89, 12, 98, 765, 234, 567,
+// 890, 12, 345, 678, 901, 234, 567, 123, 876, 543,
+// 12, 345, 678, 234, 567, 89, 90, 123, 456, 789
+// ];
+//  let plusGrand = 0 ;
+// for(let i = 0 ; i < tableau50.length ; i ++) { 
+//   if( tableau50[i] > plusGrand){
+//     plusGrand = tableau50[i] 
+// }else if ( tableau50[i] < plusGrand) {
+//  i = i + 1; 
+// } }
+
+
+// console.log("Le plus grand nombre est : " , plusGrand)
+
+// // fin de l'exercice 3
+
+// Exercice 4 : Multiples de 6 (4pts)
+// Énoncé :
+// On vous donne le même tableau de 50 nombres (tableau50).
+// Consignes :
+// 1. Écrivez un programme qui crée un nouveau tableau ne contenant que les multiples
+// de 6.
+// Exemple de résultat attendu :
+// [12, 432, 678, 876, 210, ...]
+
 const tableau50 = [
 523, 12, 87, 432, 234, 91, 678, 45, 234, 12,
 876, 34, 210, 56, 789, 123, 345, 987, 54, 321,
@@ -88,15 +117,11 @@ const tableau50 = [
 890, 12, 345, 678, 901, 234, 567, 123, 876, 543,
 12, 345, 678, 234, 567, 89, 90, 123, 456, 789
 ];
- let plusGrand = 0 ;
-for(let i = 0 ; i < tableau50.length ; i ++) { 
-  if( tableau50[i] > plusGrand){
-    plusGrand = tableau50[i] 
-}else if ( tableau50[i] < plusGrand) {
- i = i + 1; 
-} }
-
-
-console.log("Le plus grand nombre est : " , plusGrand)
-
-// fin de l'exercice 3
+let Multiples6 = [];
+for (let i = 0 ; i < tableau50.length ; i++) {
+if ( tableau50[i] % 6 == 0){
+   Multiples6.push(tableau50 [i])
+} 
+}
+console.log( Multiples6);
+ // fin de l'exercice 4
